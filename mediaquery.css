@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+    ul{
+        overflow: scroll;
+    }
+    .hero-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-section {
+        padding: 0;
+    }
+    .investor-content, .startup-list, .blog-posts, .mentor-list, .event-list, .investor-slider {
+        gap: 55px;
+    }
+    .investor-card img, .blog-posts article img, .mentor img .event img {
+        width: 92%;
+        height: 35%;
+    }
+    nav img {
+        width: 23%;
+    }
+    nav ul li a {
+        
+        font-size: 27px;
+    }
+}

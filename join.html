@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in BLUESTOCK</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+    <div class="signup-container">
+
+        <div class="title-container">
+           
+            <h1 class="company">SIGN-UP</h1>
+        </div>
+
+        <h2 class="text-center">Create an account</h2>
+        <form id="signUpForm">
+            <div class="form-group">
+                <label for="signUpName">Name</label>
+                <input type="text" class="form-control" id="signUpName" placeholder="Saisha Wagh" required>
+            </div>
+            <div class="form-group">
+                <label for="signUpEmail">Email Address</label>
+                <input type="email" class="form-control" id="signUpEmail" placeholder="hello@gamil.com" required>
+            </div>
+            <div class="form-group">
+                <label for="signUpPassword">Password</label>
+                <input type="password" class="form-control" id="signUpPassword" placeholder=". . . . . . . . . . . . . .    "required>
+            </div>
+            <div class="form-check mb-2">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">
+                    By continuing, you agree to our <a href="#">terms of service</a>.
+                </label>
+            </div> 
+
+            
+
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="eCAPTCHA_site_key"></div>
+            </div>
+            <button type="submit" class="btn-block">Sign up</button>
+        </form>
+        <div class="text-center mt-3">
+            <p> ---------or sign up with---------</p>
+            <button class="google-btn">
+                <img src="D:\complete_frontend\MY projects\BLUESTOCK\sign up bluestock\images\google.png" alt="Google Logo">
+                Continue with Google
+            </button>
+        </div>
+        <div class="text-center mt-3">
+            <p>Already have an account? <a href="#">Sign in here</a></p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

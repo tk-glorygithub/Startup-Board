@@ -1,0 +1,316 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color:  #333;
+  color: rgb(250, 247, 247);
+  padding: 12px 10px;
+}
+nav img{
+  width: 5%;
+  border: solid 3px rgb(213, 4, 56);
+ border-radius: 50%;
+
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+}
+
+.hero-slider {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: rgb(255, 255, 255);
+  max-width: 600px;
+  font-size: large;
+  font-weight: bolder;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+}
+
+.hero-slider .prev, .hero-slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  background-color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.hero-slider .prev {
+  left: 10px;
+}
+
+.hero-slider .next {
+  right: 10px;
+}
+.join-now{
+  background-color: none;
+  color: black;
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.join-now:hover{
+  background-color: orange ;
+}
+.hero-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+ 
+}
+
+
+
+.hero-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid orange;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: larger;
+  
+
+}
+
+.hero-card h3 {
+  margin-top: 0;
+ 
+  
+}
+
+.hero-card button {
+  background-color: #f04e23;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.hero-card button:hover{
+   border: 3px solid  #f04e23;
+   background-color: #f4f4f4;
+   color: black;
+}
+/* main 1st page ends here*/
+
+/* investor section */
+.investor-content, .startup-list, .blog-posts, .mentor-list, .event-list, .investor-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+ 
+}
+#investors h2 ,#startups h2,#mentors h2,#events h2,#blog h2{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: underline;
+  font-size: xx-large;
+  
+
+}
+#investors h2:hover ,#startups h2:hover,#mentors h2:hover,#events h2:hover,#blog h2:hover{
+  color: orange;
+}
+
+.investor-content {
+  align-items: center;
+  
+}
+
+.investor-content img,.startup-list img ,.mentor-list img ,.event-list img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border-bottom-right-radius: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 4px 4px 4px rgba(228, 25, 10, 15);
+}
+
+.investor-info ,.mentor ,.event{
+  flex: 1;
+  padding: 20px;
+}
+
+.explore-more, .more-info {
+  background-color: #f04e23;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.explore-more:hover ,.more-info:hover{
+  border: 3px solid  #f04e23;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.investor-card,  .blog-posts article {
+  background-color: #dad4d4;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  border: 2px solid rgb(238, 175, 58);
+  border-bottom: 2px solid red;
+  border-right:2px solid red ;
+}
+.startup{
+  padding-top: 5px;
+  width: 40rem;
+  height: 40rem;
+}
+.startup-list img ,.mentor-list img ,.event-list img{
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  border: 2px solid orange;
+  margin-left: 15px;
+}
+
+.investor-card:hover, .startup:hover, .blog-posts article:hover, .mentor:hover, .event:hover {
+  transform: scale(1.05);
+}
+
+.investor-card img,  .blog-posts article img, .mentor img .event img {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  border: 2px solid orange;
+}
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .hero {
+      height: 400px;
+  }
+
+  .investor-card, .startup, .blog-posts article, .mentor, .event {
+      flex: 1 1 100%;
+  }
+
+  .investor-content {
+      flex-direction: column;
+  }
+
+  .investor-content img {
+      margin-bottom: 20px;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      text-align: left;
+  }
+}

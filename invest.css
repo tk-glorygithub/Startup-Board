@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f1ef;
+    color: #333;
+}
+
+.investment-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:  #f8e0a3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000000; /* Light orange color */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+h1:hover{
+    color: orangered;
+}
+
+h2 {
+    color:orangered; /* Slightly darker shade of orange */
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.investment-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.investment-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.investment-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.investment-item:hover .investment-image {
+    transform: scale(1.05);
+}
